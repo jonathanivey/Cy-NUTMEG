@@ -1,7 +1,7 @@
 # NUTMEG: Separating Signal From Noise in Annotator Disagreement
 This repository contains the code related to the paper:
 
-> Jonathan Ivey, Susan Gauch, and David Jurgens. 2025. NUTMEG: Separating Signal From Noise in Annotator Disagreement. *arXiv preprint*. ArXiv:2507.18890 [cs].
+> Jonathan Ivey, Susan Gauch, and David Jurgens. 2025. NUTMEG: Separating Signal From Noise in Annotator Disagreement. In *Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing*, Suzhou, China. Association for Computational Lingustics.
 
 In this paper, we introduce **NUTMEG**, a tool to model annotator competence in subjective tasks. It reduces noise from unreliable annotators while retaining disagreement between user-specified subpopulations. This repository contains the code for an optimized implementation of NUTMEG that is ideal if you're just looking to use the model. If you want to replicate the experiments from the paper or you want a plain Python implementation, see the [original repository](https://github.com/jonathanivey/NUTMEG).
 
@@ -93,6 +93,10 @@ If you use NUTMEG in your research, please cite:
     title = "NUTMEG: Separating Signal From Noise in Annotator Disagreement",
     author = "Jonathan Ivey and Susan Gauch and David Jurgens",
     booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
-    url = "https://arxiv.org/abs/2507.18890",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://arxiv.org/abs/2507.18890"
 }
 ```
