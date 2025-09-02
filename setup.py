@@ -9,7 +9,7 @@ with open("README.md", 'r') as f:
 
 setup(
     name="cy-nutmeg",
-    version="0.1.2",
+    version="0.1.4",
     description="A Cython-optimized implementation of the NUTMEG algorithm",
     author="Jonathan Ivey",
     author_email="jonathan8ivey@gmail.com",

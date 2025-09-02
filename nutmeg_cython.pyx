@@ -228,6 +228,25 @@ class NUTMEG:
         if not return_unobserved:
             self.labels_[np.all(np.isnan(gold_label_marginals), axis=2)] = np.nan
 
+        # convert output to be more user friendly
+        labels_dict = {}
+        for i, task in enumerate(task_names):
+            labels_dict[task] = {}
+            for j, subpop in enumerate(subpop_names):
+                labels_dict[task][subpop] = self.labels_[i, j]
+        self.labels_ = labels_dict
+
+        probas_dict = {}
+        for i, task in enumerate(task_names):
+            probas_dict[task] = {}
+            for j, subpop in enumerate(subpop_names):
+                probas_dict[task][subpop] = {}
+                for k, label in enumerate(label_names):
+                    probas_dict[task][subpop][label] = self.probas_[i, j, k]
+        self.probas_ = probas_dict
+
+
+
         return self
 
     def _initialize(self, n_workers: int, n_labels: int) -> None:
